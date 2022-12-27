@@ -1,0 +1,7 @@
+package kr.go.edu.model;
+
+public interface SampleDAO {
+	public List<SampleDTO> SampleList() throws Exception;
+	public SampleDTO getSample() throws Exeption;
+	public void addSample(SampleDTO sample) throws Exception;
+}

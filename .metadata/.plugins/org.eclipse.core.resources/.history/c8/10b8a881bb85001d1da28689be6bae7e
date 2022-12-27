@@ -1,0 +1,7 @@
+package kr.go.edu.controller;
+
+@Controller
+@RequestMaspping
+public class SampleController {
+
+}

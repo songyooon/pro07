@@ -1,0 +1,5 @@
+package kr.go.edu.service;
+
+public class SampleServiceImpl {
+
+}

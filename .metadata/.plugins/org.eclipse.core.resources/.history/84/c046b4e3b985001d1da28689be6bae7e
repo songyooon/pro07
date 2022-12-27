@@ -1,0 +1,5 @@
+package kr.go.edu.dto;
+
+public class SampleDTO {
+
+}
