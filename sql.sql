@@ -28,4 +28,30 @@ create table board (
     
     select * from sample;
     
+    create database erp;
+    use erp;
+    create table emp(empno int(20) primary key, name varchar(30) not null, dept varchar(30) not null,
+    pos varchar(30) not null, email varchar(50) not null, regdate datetime not null);
+    
+    create table sal(empno int(20) primary key, name varchar(30) not null, saltot int(50) not null, sdtax int(50),
+    jmtax int(50), kmyk int(50), gunbo int(50), gybh int(50), realsal int(50) not null);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     

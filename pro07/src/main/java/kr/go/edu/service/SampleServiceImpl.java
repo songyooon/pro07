@@ -16,7 +16,7 @@ public class SampleServiceImpl implements SampleService {
 	
 	@Override
 	public List<SampleDTO> SampleList() throws Exception {
-		return sampleDao.sampleList();
+		return sampleDao.SampleList();
 	}
 
 	@Override
@@ -28,7 +28,4 @@ public class SampleServiceImpl implements SampleService {
 	public void addSample(SampleDTO sample) throws Exception {
 		sampleDao.addSample(sample);
 	}
-
-	
-	
 }
