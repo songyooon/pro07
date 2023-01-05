@@ -39,7 +39,7 @@ public class RestTest {
 	@ResponseBody
 	@GetMapping("test2/{id}/{pw}")
 	public Map<String, String> test2(@PathVariable("id") String id) {
-		Map<String, String> res = new HashMap<>();
+		Map<String, Stirng> res = new HashMap<>();
 			res.put(id, pw);
 		}
 		
