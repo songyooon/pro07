@@ -1,11 +1,9 @@
-/*
+
 
 package kr.go.edu;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -36,18 +34,9 @@ public class RestTest {
 		return "application request url";
 	}
 	
-	@ResponseBody
-	@GetMapping("test2/{id}/{pw}")
-	public Map<String, String> test2(@PathVariable("id") String id) {
-		Map<String, Stirng> res = new HashMap<>();
-			res.put(id, pw);
-		}
-		
-		return res;
-	}
 	
 	@ResponseBody
-	@GetMapping("test3/{id)}")
+	@GetMapping("test/(id)")
 	public List<String> test3(@PathVariable("id") String id) {
 		List<String> lst = new ArrayList<String>();
 		for(int i=0;i<5;i++) {
@@ -57,21 +46,6 @@ public class RestTest {
 		return lst;
 	}
 	
-	
-	@ResponseBody
-	@GetMapping("test4/{id}/{pw}")
-	public Map<String, String> test4(@PathVariable("id") String id,@PathVariable("pw") String pw)
-		Map<String, String> res = restService.getTest1(id, pw);
-		return res;
-	}
-	
-	@ResponseBody
-	@GetMapping("test5/{id}")
-	public List<String> test5(@PathVariable("id") String id){
-		List<String> lst = restService.getTest2(id);
-		return lst;
-	}
-	
 }
 
-*/
+	
